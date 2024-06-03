@@ -1,8 +1,10 @@
+import Footer from '@/components/Footer'
 import Logo from '@/components/Logo'
 import NavBar from '@/components/NavBar'
 import '@/styles/globals.css'
 import {Montserrat} from "next/font/google"
 import Head from 'next/head'
+
 
 
 const montserrat = Montserrat({
@@ -22,6 +24,7 @@ export default function App({ Component, pageProps }) {
   <NavBar/>
   
   <Component {...pageProps} />
+  <Footer/>
   </main>
   </>
   )
