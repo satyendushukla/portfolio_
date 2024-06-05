@@ -1,6 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 
 const about = () => {
@@ -31,9 +32,37 @@ const about = () => {
                  I'm excited to bring my skills and enthusiasm to your next project.
                 </p>
             </div>
-            <div>
-              <Image src={} alt="satyendu shukla" className="w-full h-auto rounded-2xl"/>
+            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+            bg-light p-8'>
+            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark'/>
+                       <Image src={""} alt="satyendu shukla" className="w-full h-auto rounded-2xl"/>
+   
             </div>
+            <div className='col-span-2 flex flex-col items-end justify-between'>
+  <div className='flex flex-col items-end justify-center'>
+    <span className='inline-block text-7xl font-bold'>
+      5+
+    </span>
+    <h2 className='text-xl font-medium capitalize text-dark/75'>Relevant Coursework</h2>
+  </div>
+
+  <div className='flex flex-col items-end justify-center'>
+    <span className='inline-block text-7xl font-bold'>
+      8.0
+    </span>
+    <h2>CGPA </h2>
+  </div>
+
+  <div className='flex flex-col items-end justify-center'>
+    <span className='inline-block text-7xl font-bold'>
+      6+
+    </span>
+    <h2>Personal Projects</h2>
+  </div>
+</div>
+
+
+            
          </div>
          </Layout>
         </main>
