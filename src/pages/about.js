@@ -5,6 +5,7 @@ import Image from 'next/image'
 import profilePic from "../../public/images/profile/sat.png"
 import React, { useEffect, useRef } from 'react'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import Skills from '@/components/Skills'
 
 
 const AnimatedNumbers=({value}) =>{
@@ -65,7 +66,7 @@ const about = () => {
             </div>
             <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
             bg-light p-8'>
-            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark'/>
+            <div className='absolute top-0 -right-3 -z-10 w-[106%] h-[103%] rounded-[2rem] bg-dark'/>
                        <Image src={profilePic} alt="satyendu shukla" className="w-full h-auto rounded-2xl"/>
    
             </div>
@@ -95,6 +96,7 @@ const about = () => {
 
             
          </div>
+         <Skills/>
          </Layout>
         </main>
     </>
